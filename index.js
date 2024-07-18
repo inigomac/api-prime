@@ -16,7 +16,7 @@ const path = require('path');
 const { router } = require('./router/router')
 
 const PORT = process.env.PORT || 3000
-const MONGO = process.env.mongo || 'mongodb://127.0.0.1:27017/prime' 
+const MONGO = process.env.MONGO || 'mongodb://127.0.0.1:27017/prime' 
 
 
 const conectar = async () => mongoose.connect(MONGO)
